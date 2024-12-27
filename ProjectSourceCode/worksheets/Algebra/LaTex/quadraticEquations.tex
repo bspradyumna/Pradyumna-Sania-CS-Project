@@ -1,0 +1,271 @@
+\documentclass[addpoints, 12pt]{exam}
+\usepackage{graphicx,amsmath,amsthm,latexsym,amssymb,xcolor,fancyhdr}
+\theoremstyle{remark}
+\newtheorem*{soln}{Solution}
+
+% Customize the header
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[C]{Quadratic Equations}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\begin{document}
+
+\thispagestyle{empty}
+
+% Centered Title
+\begin{center}
+    {\LARGE \textbf{Quadratic Equations}}
+\end{center}
+
+\section{Questions}
+
+\begin{questions}
+\question Represent the following situations in the form of a quadratic equation:
+\end{questions}
+
+\begin{enumerate}
+    \item[(i)] The area of a rectangle is 46. The length of the rectangle is 3 more than half its width. [Solution on page 2]
+    \item[(ii)] A train travels a distance of 45 km at a constant speed from point A to point B. On the way back (that is, B to A), the train reduces its constant speed to 3 km/h less than what it initially had been. Hence, it takes the train 3 hours more to cover the same distance. [Solution on page 3]
+\end{enumerate}
+
+\question Determine the vertex of the following quadratic functions:
+\begin{enumerate}
+    \item[(i)] $f(x) = (x + 5)^2 - 2$ [Solution on page 3]
+    \item[(ii)] $g(x) = x^2 + 6x + 3$ [Solution on page 3]
+    \item[(iii)] $h(x) = x^2-14x$ [Solution on page 3]
+\end{enumerate}
+
+\question Provide a proof for the quadratic formula. [Solution on page 4]
+
+\question Find the solutions for the following quadratic equations:
+\begin{enumerate}
+    \item[(i)] $x^2 + 5x + 6 = 0$ [Solution on page 4]
+    \item[(ii)] $x^2-125x = 0$ [Solution on page 5]
+    \item[(iii)] $4x^2 -2(a^2 + b^2)x +a^2b^2 = 0$ [Solution on page 5]
+    \item[(iv)] $x^2 + \left(a + \frac{1}{a}\right)x = -1$ [Solution on page 5]
+\end{enumerate}
+
+\question Find two consecutive natural numbers whose product is 6. [Solution on page 5 and 6]
+
+\question The sum of the reciprocals of two natural numbers is $\frac{1}{6}$. The result of subtracting 3 from the first number and adding 2 to the second number is the same. Find the two numbers. [Solution on page 6 and 7]
+
+\question Starting at one of its x-intercepts, a particle travels along the parabola $f(x) = x^2+7x-18$ to reach the other x-intercept. Find the shortest distance between the two intercepts. [Solution on page 7]
+
+\question Find the discriminant of the following quadratic functions and determine the nature of their roots:
+\begin{enumerate}
+    \item[(i)] $f(x) = 2x^2 + 7x + 15$ [Solution on page 7]
+    \item[(ii)] $g(x) = 7x^2 + 33$ [Solution on page 7]
+    \item[(iii)] $h(x) = x^2 +7x - 3$ [Solution on page 7]
+\end{enumerate}
+
+\question Is it possible to construct a rectangle whose length is 3 times its width and whose area is 500? If so, then find its dimensions. [Solution on page 8]
+
+\question Assume that $p, q, r$ and $s$ are real numbers such that $pr=2(q + s)$. Consider the quadratic equations $x^2 + px + q = 0$ and $x^2 + rx + s = 0$. Show that at least one of these equations has real roots. [Solution on page 8]
+\end{questions}
+
+\section{Solutions}
+1.
+\begin{enumerate}
+    \item[(i)] Let the width of the rectangle be $x$ and the length of the rectangle be $y$. From the information given about the dimensions, $y=\frac{x}{2} + 3$ (Equation 1). We know that the area of a rectangle is its length times its width. So, we have
+    \begin{eqnarray*}
+        xy & = & 46 \\
+        x\left(\frac{x}{2} + 3\right) & = & 46 \quad (\text{From Equation 1})\\
+        \frac{x^2}{2} + 3x & = & 46 \\
+        \frac{x^2 + 6x}{2} & = & 46 \\
+        x^2 + 6x & = & 46 \cdot 2 \\
+        x^2 + 6x - 92 & = & 0 \\
+    \end{eqnarray*}
+    {\boldmath $$\textcolor{blue}{\boxed{\textcolor{red}{x^2 + 6x - 92 = 0}}}$$}
+    \newline
+    \newline
+    \newline
+    \newline
+    \newline
+    \newline
+    \newline
+    \newline
+    \item[(ii)] Let the original speed and time it takes to cover the distance by $x$ and $y$ respectively. Since we know that distance is speed multiplied by the time taken, we have $xy = 45$ (Equation 1). By the same logic, we also have $(x-3)(y+3) = 45$. Note that:
+    \begin{eqnarray*}  
+        (x-3)(y+3) & = & 45 \\
+        xy+3x-3y-9 & = & 45 \\
+        45+3x-3\left(\frac{45}{x}\right) - 9 & = & 45 \quad (\text{From Equation 1})\\
+        3x - \frac{135}{x} - 9 & = & 0 \\
+        3x^2 - 135 - 9x & = & 0 \\
+        3x^2 - 9x - 135 & = & 0 \\
+    \end{eqnarray*}
+    {\boldmath $$\textcolor{blue}{\boxed{\textcolor{red}{3x^2 - 9x - 135 =  0}}}$$}
+\end{enumerate}
+
+2. For this question, we will be using the fact that the vertex of a quadratic function in the form $f(x) = (x - h)^2 + k$ is $(h, k)$.
+\begin{enumerate}
+    \item [(i)] In this function, we have $h = -5$ and $k = -2$. So the vertex is {\boldmath $\textcolor{blue}{\boxed{\textcolor{red}{(-5, -2)}}}$}.
+    \item [(ii)]Note that:
+    \begin{eqnarray*}
+        x^2 + 6x + 3 & = & (x^2 + 6x + 9) + 3 - 9 \\
+        & = & (x + 3)^2 - 6 \\
+    \end{eqnarray*}
+    So, we have $h = -3$ and $k = -6$. Therefore, the vertex is {\boldmath $\textcolor{blue}{\boxed{\textcolor{red}{(-3, -6)}}}$}.
+    \item [(iii)]Note that:
+    \begin{eqnarray*}
+        x^2 - 14x & = & (x^2 - 14x + 49) - 49 \\
+        & = & (x - 7)^2 - 49 \\
+    \end{eqnarray*}
+     So, we have $h = 7$ and $k = -49$. Therefore, the vertex is {\boldmath $\textcolor{blue}{\boxed{\textcolor{red}{(7, -49)}}}$}.
+    \newline
+    \newline
+    \newline
+    \newline
+    \newline
+    \newline
+    \newline
+    \newline
+\end{enumerate}
+
+
+3. Consider the standard form of any quadratic function: $f(x) = ax^2 + bx +c$ where $a, b$ and $c$ are constants. Set this equal to 0 as we are trying to solve for $x$ when $f(x) = 0$. We have:
+\begin{eqnarray*}
+    ax^2 + bx +c & = & 0 \\
+    a\left(x^2 + \frac{b}{a}x\right) + c & = & 0 \\
+    a\left(x^2 + \frac{b}{a}x + \frac{b^2}{4a^2} - \frac{b^2}{4a^2}\right) + c & = & 0 \\
+    a\left(x^2 + \frac{b}{a}x + \frac{b^2}{4a^2}\right) - a\left(\frac{b^2}{4a^2}\right) + c & = & 0 \\
+    a\left(x + \frac{b}{2a}\right)^2 - \frac{b^2}{4a} + c & = & 0 \\
+    a\left(x + \frac{b}{2a}\right)^2 & = & \frac{b^2}{4a} - c \\
+    a\left(x + \frac{b}{2a}\right)^2 & = & \frac{b^2 - 4ac}{4a} \\
+    \left(x + \frac{b}{2a}\right)^2 & = & \frac{b^2 - 4ac}{4a^2} \\
+    x + \frac{b}{2a} & = & \pm \sqrt{\frac{b^2-4ac}{4a^2}} \\
+    x & = & \frac{-b}{2a}\pm \frac{\sqrt{b^2-4ac}}{2a} \\
+    x & = & \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+\end{eqnarray*}
+$$\textcolor{blue}{\boxed{\textcolor{red}{x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}}}}$$.
+
+4.
+\begin{enumerate}
+    \item [(i)] We have:
+    \begin{eqnarray*}
+        x^2 + 5x + 6 & = & 0 \\
+        x^2 + 2x + 3x + 6 & = & 0 \\
+        x(x+2) + 3(x+2) & = & 0 \\
+        (x+2)(x+3) & = & 0 \\
+    \end{eqnarray*}
+    So, either $x+2=0$ or $x+3=0$. Therefore, the solutions are {\boldmath $\textcolor{blue}{\boxed{\textcolor{red}{x = -3,x= -2}}}$}.
+
+    \item[(ii)] We have:
+    \begin{eqnarray*}
+        x^2 - 125x & = & 0 \\
+        x(x-125) & = & 0 \\
+    \end{eqnarray*}
+    So, either $x=0$ or $x-125=0$. Therefore, the solutions are {\boldmath $\textcolor{blue}{\boxed{\textcolor{red}{x = 0,x= 125}}}$}.
+
+    \item[(iii)] We have:
+    \begin{eqnarray*}
+        4x^2 - 2(a^2+b^2)x + a^2b^2 & = & 0 \\
+        4x^2 - 2a^2x - 2b^2x+ a^2b^2 & = & 0 \\
+        2x(2x - a^2) - b^2(2x-a^2) & = & 0 \\
+        (2x - b^2)(2x-a^2) & = & 0 \\
+    \end{eqnarray*}
+    So, either $2x-b^2=0$ or $2x-a^2=0$. Therefore, the solutions are {\boldmath $\textcolor{blue}{\boxed{\textcolor{red}{x = \frac{a^2}{2},x= \frac{b^2}{2}}}}$}.
+
+    \item[(iv)] We have:
+    \begin{eqnarray*}
+        x^2 + \left(a + \frac{1}{a}\right)x & = & -1 \\
+        x^2 + ax + \frac{x}{a} & = & -1 \\
+        x^2 + ax + \frac{x}{a} + 1 & = & 0 \\
+        x(x+a) + \frac{1}{a}(x + a) & = & 0 \\
+        (x+a)(x+\frac{1}{a}) & = & 0 \\
+    \end{eqnarray*}
+    So, either $x+a=0$ or $x+\frac{1}{a}=0$. Therefore, the solutions are {\boldmath $\textcolor{blue}{\boxed{\textcolor{red}{x = -a,x= \frac{-1}{a}}}}$}.
+\end{enumerate}
+
+5. Let the two consecutive numbers be $x$ and $x+1$. First, we need to find $x$ when $x(x+1) = 6$. So, we have:
+\begin{eqnarray*}
+    x(x+1) & = & 6 \\
+    x^2 + x & = & 6 \\
+    x^2 + x - 6 & = & 0 \\
+    x^2 + 3x - 2x - 6 & = & 0 \\
+    x(x+3) - 2(x+3) & = & 0 \\
+    (x-2)(x+3) & = & 0 \\
+\end{eqnarray*}
+So, either $x-2=0$ or $x+3=0$. Thus, $x = 2, x=-3$. Since we are only considering natural numbers, we disregard $x=-3$. Therefore, the two consecutive natural numbers whose product is 6 are {\boldmath $\textcolor{blue}{\boxed{\textcolor{red}{2, 3}}}$}.
+\newline
+
+6.
+\textcolor{blue}{Solution 1:} \newline
+Let the two numbers be $a$ and $b$. We have to two equations, $\frac{1}{a} + \frac{1}{b} = \frac{1}{6}$ (Equation 1) and $a-3=b+2$ (Equation 2). Note that:
+\begin{eqnarray*}
+    a-3 & = & b+2 \quad (\text{Equation 2})\\
+    a & = & b+5 \quad (\text{Equation 3})\\\\
+    \frac{1}{a} + \frac{1}{b} & = & \frac{1}{6} \quad (\text{Equation 1})\\
+    \frac{1}{b+5} + \frac{1}{b} & = & \frac{1}{6} \\
+    \frac{b + (b + 5)}{b(b+5)} & = & \frac{1}{6} \\
+    \frac{2b + 5}{b^2 + 5b} & = & \frac{1}{6} \\
+    6(2b+5) & = & b^2+5b \\
+    12b + 30 & = & b^2+5b \\
+    b^2 - 7b - 30 & = & 0 \\
+    b^2 - 10b + 3b - 30 & = & 0 \\
+    b(b-10)+3(b-10) & = & 0 \\
+    (b+3)(b-10) & = & 0 \\
+\end{eqnarray*}
+So, either $b+3=0$ or $b-10=0$. Thus, $b = -3, b=10$. Since we are only considering natural numbers, we disregard $b=-3$. From Equation 3, we have $a = 10 + 5 = 15$. Therefore, the two numbers are {\boldmath $\textcolor{blue}{\boxed{\textcolor{red}{15, 10}}}$}.
+\newline
+\textcolor{blue}{Solution 2:} \newline
+Let the result of subtracting 3 from the first number and adding 2 to the second number be $x$. The first number is $x+3$ and the second number is $x-2$. We have:
+\begin{eqnarray*}
+    \frac{1}{x+3} + \frac{1}{x-2} & = & \frac{1}{6} \\
+    \frac{(x-2) + (x+3)}{(x+3)(x-2)} & = & \frac{1}{6} \\
+    \frac{2x+1}{x^2+x-6} & = & \frac{1}{6} \\
+    6(2x+1) & = & x^2+x-6 \\
+    12x + 6 & = & x^2+x-6 \\
+    x^2 - 11x - 12 & = & 0 \\
+    x^2 - 12x + x - 12 & = & 0 \\
+    x(x-12) + (x-12) & = & 0\\
+    (x-12)(x+1) & = & 0 \\
+\end{eqnarray*}
+So, either $x-12=0$ or $x+1=0$. Thus, $x = -1, x=12$. The second number is either $-1 - 2 = -3$ or $12 - 2 = 10$. Since $x=-1$ leads to the second number being a non-natural number, we disregard $x=-1$. So, the first number is $12+3 = 15$ and the second number is $12 - 2 = 10$. Therefore, the two numbers are {\boldmath $\textcolor{blue}{\boxed{\textcolor{red}{15, 10}}}$}.
+\newline
+
+7. First, let's find the x-intercepts of the function $f(x)$. Set $f(x)$ equal to 0. We have:
+\begin{eqnarray*}
+    x^2+7x-18 & = & 0 \\
+    x^2+9x-2x-18 & = & 0 \\
+    x(x+9)-2(x+9) & = & 0 \\
+    (x+9)(x-2) & = & 0 \\
+\end{eqnarray*}
+So, either $x-2=0$ or $x+9=0$. Thus, $x = -9, x=2$. So, the x-intercepts are $(-9, 0)$ and $(2, 0)$. The shortest path between any two points on the xy plane is a straight line. Therefore, the shortest distance is {\boldmath $\textcolor{blue}{\boxed{\textcolor{red}{2-(-9) = 11}}}$}.
+\newline
+
+8. The discriminant of any quadratic function in the standard form, $f(x) = ax^2 + bx + c$ is $b^2 - 4ac$.
+\begin{enumerate}
+    \item [(i)] In this function, we have $a = 2, b = 6, c=15$. Therefore, the discriminant of $f(x)$ is $6)^2 - 4(2)(15) = 36 - 120${\boldmath $\textcolor{blue}{\boxed{\textcolor{red}{ = -84}}}$}.
+    \item[(ii)] In this function, we have $a = 7, b = 0, c=33$. Therefore, the discriminant of $g(x)$ is $(0)^2 - 4(7)(33)${\boldmath $\textcolor{blue}{\boxed{\textcolor{red}{ = -924}}}$}.
+    \item[(iii)] In this function, we have $a = 1, b = 7, c=-3$. Therefore, the discriminant of $h(x)$ is $(7)^2 - 4(1)(-3) = 49 + 12${\boldmath $\textcolor{blue}{\boxed{\textcolor{red}{ = 61}}}$}.
+    \newline
+\end{enumerate}
+
+9. Let the length and the width of the rectangle be $x$ and $y$. We have, $x=3y$ (Equation 1) and $xy=500$. Note that:
+\begin{eqnarray*}
+    xy & = & 500 \\
+    (3y)(y) & = & 500 \quad (\text{From Equation 1})\\
+    3y^2 & = & 500 \\
+    3y^2-500 & = & 0 \\
+\end{eqnarray*}
+Consider the function $f(y) = 3y^2-500$. If this function has real roots, then the rectangle is possible. The discriminant of this function is $0^2-4(3)(-500) = 6000$ which is greater than 0. Therefore, $f(y)$ has real roots and the rectangle is possible.
+\newline
+
+10. Let $f(x) = x^2 + px + q$ and $g(x)=x^2+rx+s$. The discriminant of $f(x), \underset{\text{1}}{\text{D}}$, is $p^2-4q$ and the discriminant of $g(x), \underset{\text{2}}{\text{D}}$, is $r^2-4s$. Note that:
+\begin{eqnarray*}
+    \underset{\text{1}}{\text{D}} + \underset{\text{2}}{\text{D}} & = & p^2 - 4q + r^2 - 4s \\
+    & = & p^2 + r^2 - 4(q+s) \\
+    & = & p^2 + r^2 - 2pr \\
+    & = & (p-r)^2 \geq 0 \\
+\end{eqnarray*}
+Since $\underset{\text{1}}{\text{D}} + \underset{\text{2}}{\text{D}} \geq 0$, at least one of them has to be greater than or equal to zero. Therefore, at least one of the equations has real roots.
+
+
+\vfill
+\noindent\tiny
+Author: Pradyumna Bangalore Sheshadri \\
+Date: December 2024 \\
+Sources: Sharma, Ravi Dutt. “Quadratic Equations.” Mathematics Class X, Dhanpat Rai Publications, New Delhi, Delhi, 2020, pp. 4.1-4.88, \url{https://dhanpatrai.com/books.php}. Accessed 2020.
+
+\end{document}
