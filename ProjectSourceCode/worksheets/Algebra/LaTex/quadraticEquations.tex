@@ -1,19 +1,18 @@
 \documentclass[addpoints, 12pt]{exam}
-\usepackage{graphicx,amsmath,amsthm,latexsym,amssymb,xcolor,fancyhdr}
+\usepackage{graphicx,amsmath,amsthm,latexsym,amssymb,xcolor,url, fancyhdr}
 \theoremstyle{remark}
 \newtheorem*{soln}{Solution}
 
-% Customize the header
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhead[C]{Quadratic Equations}
+\fancyfoot[C]{\thepage}
 \renewcommand{\headrulewidth}{0.4pt}
 
 \begin{document}
 
 \thispagestyle{empty}
 
-% Centered Title
 \begin{center}
     {\LARGE \textbf{Quadratic Equations}}
 \end{center}
@@ -22,7 +21,6 @@
 
 \begin{questions}
 \question Represent the following situations in the form of a quadratic equation:
-\end{questions}
 
 \begin{enumerate}
     \item[(i)] The area of a rectangle is 46. The length of the rectangle is 3 more than half its width. [Solution on page 2]
@@ -58,6 +56,8 @@
     \item[(ii)] $g(x) = 7x^2 + 33$ [Solution on page 7]
     \item[(iii)] $h(x) = x^2 +7x - 3$ [Solution on page 7]
 \end{enumerate}
+
+\thispagestyle{plain}
 
 \question Is it possible to construct a rectangle whose length is 3 times its width and whose area is 500? If so, then find its dimensions. [Solution on page 8]
 
@@ -261,11 +261,9 @@ Consider the function $f(y) = 3y^2-500$. If this function has real roots, then t
 \end{eqnarray*}
 Since $\underset{\text{1}}{\text{D}} + \underset{\text{2}}{\text{D}} \geq 0$, at least one of them has to be greater than or equal to zero. Therefore, at least one of the equations has real roots.
 
-
 \vfill
 \noindent\tiny
 Author: Pradyumna Bangalore Sheshadri \\
 Date: December 2024 \\
 Sources: Sharma, Ravi Dutt. “Quadratic Equations.” Mathematics Class X, Dhanpat Rai Publications, New Delhi, Delhi, 2020, pp. 4.1-4.88, \url{https://dhanpatrai.com/books.php}. Accessed 2020.
-
 \end{document}
